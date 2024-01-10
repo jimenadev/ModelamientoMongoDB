@@ -1,0 +1,29 @@
+use('store')
+
+db.products.insertMany([
+    {
+        name:'Product 1',
+        size:['L', 'M'],
+        price:12000
+    },
+    {
+        name:'Product 2',
+        size:['L', 'S'],
+        price:22000
+    },
+    {
+        name:'Product 3',
+        size:['L', 'M'],
+        price:40000
+    },
+    {
+        name:'Product 4',
+        size:['S', 'M'],
+        price:4000
+    },
+    {
+        name:'Product 5',
+        size:['L', 'M'],
+        price:7000
+    },
+])

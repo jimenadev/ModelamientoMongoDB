@@ -1,0 +1,25 @@
+use("store")
+
+db.stores.findOne({
+   storeId:'ST001'
+})
+
+
+use("store")
+
+db.stores_details.findOne({
+   storeId:'ST001'
+})
+
+
+use("store")
+db.stores.aggregate([
+    {
+        $lookup: {
+          from: "stores_details",
+          localField: "storeId",
+          foreignField: "storeId",
+          as: "stores"
+        }
+    }
+])

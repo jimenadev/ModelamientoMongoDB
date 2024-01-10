@@ -1,0 +1,12 @@
+use("store")
+
+db.products.updateOne(
+    {_id:ObjectId('659e7c5cede38f84ae2bdeac')},
+    {
+        $set:{
+            stores_ids:[
+                ObjectId('659e7d6da8175af6794feea4')
+            ]
+        }
+    }
+)

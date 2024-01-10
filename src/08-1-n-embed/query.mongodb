@@ -1,0 +1,13 @@
+use("store")
+
+db.users.find()
+
+use("store")
+db.orders.find()
+
+
+use("store")
+db.orders.find({
+  "items.qty":3
+})
+

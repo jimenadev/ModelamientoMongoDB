@@ -1,0 +1,20 @@
+use('store')
+
+db.users.insertOne({
+    last_name: 'Molina',
+    email: "paula@gmail.com",
+    password: "123HSJDGggtA",
+    role: 'admin',
+    isSingle: true,
+    social: ["facebook"],
+    address:{
+        street: 'cr 891',
+        city: 'Bogota',
+        zip:'11011'
+    },
+    shipping_address:{
+        street: 'cr 564',
+        city: 'Bogota',
+        zip:'12011'
+    }
+})

@@ -1,0 +1,33 @@
+use('store')
+
+db.orders.insertOne({
+    user_id: ObjectId('659df27f1d2e523544c05319'),
+    date: "2024-12-12",
+    items: [{
+        name: 'Camiseta',
+        price: 120,
+        qty:1
+        },
+        {
+            name: 'Pantalon',
+            price: 200,
+            qty:2
+        }
+    ],
+})
+
+
+
+use('store')
+
+db.orders.insertOne({
+    user_id: ObjectId('659df27f1d2e523544c05319'),
+    date: "2024-12-12",
+    items: [{
+        name: 'Juguete',
+        price: 120,
+        qty:3
+        }
+    ],
+})
+

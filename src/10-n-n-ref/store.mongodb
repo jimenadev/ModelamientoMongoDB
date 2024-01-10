@@ -1,0 +1,22 @@
+use('store')
+
+db.stores.insertMany([
+    {
+        name:'Store 1',
+        size:['L', 'M'],
+        products_ids:[
+            ObjectId('659e7c5cede38f84ae2bdeac'),
+            ObjectId('659de51b1b5e16b8efabbda7'),
+            ObjectId('659e7c5cede38f84ae2bdead')
+        ]
+    },
+    {
+        name:'Store 2',
+        size:['L', 'S'],
+        products_ids:[
+            ObjectId('659e7c5cede38f84ae2bdeae'),
+            ObjectId('659e7c5cede38f84ae2bdeaf'),
+            ObjectId('659e7c5cede38f84ae2bdeb0'),
+        ]
+    },
+])
