@@ -1,0 +1,8 @@
+use('store')
+
+db.orders.insertOne({
+    user_id: ObjectId('659e77b6b9f99cdb8b6aec9a'),
+    date: "2024-12-12",
+    total:0,
+    items: [],
+})

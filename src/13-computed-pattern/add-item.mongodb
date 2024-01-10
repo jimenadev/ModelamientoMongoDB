@@ -1,0 +1,19 @@
+use("store")
+
+db.orders.updateOne(
+    {_id: ObjectId('659e849ada74f23147aae40c')},
+    {
+        $push:{
+            items:{
+                name: 'Camiseta',
+                price: 12,
+                qty:1,
+                product_id:ObjectId('659de51b1b5e16b8efabbda7')
+            },
+        },
+        $inc:{
+            total:12 * 1
+        }
+    }
+)
+

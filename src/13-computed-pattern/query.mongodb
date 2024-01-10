@@ -1,0 +1,15 @@
+use("store")
+
+db.products.find()
+
+use("store")
+
+db.orders.find({_id:ObjectId('659e849ada74f23147aae40c')})
+
+
+
+
+
+
+
+
