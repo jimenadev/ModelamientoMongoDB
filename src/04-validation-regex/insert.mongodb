@@ -1,0 +1,9 @@
+use('store')
+
+db.users.insertOne({
+    last_name: 'Molina',
+    email: "paula@gmail.com",
+    password: "123HSJDGggtA",
+    role: 'admin',
+    isSingle: true
+})
